@@ -18,12 +18,12 @@ public class SevenSteps {
     }
     @When("^enter complete and file data$")
     public void enterData() {
+        sevenPage.fileUpload();
+        sevenPage.selectDates();
         sevenPage.enterData();
         sevenPage.clickRadio();
         sevenPage.selectOS("Mac");
         sevenPage.selectMac("Yosemite");
-        sevenPage.selectDates();
-        sevenPage.fileUpload();
     }
     @And("^click in the submit button file$")
     public void submitForm() {

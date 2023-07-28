@@ -15,9 +15,15 @@ import java.util.List;
 
 public class BasePage {
 
-    protected static WebDriver driver;
+    protected static WebDriver driver; //export driver=/Users/eduard.morenoo/Documents/Entrenamientos/chromedriver_mac_arm64/chromedriver
     public static WebDriverWait wait;
     Actions action = new Actions(driver);
+
+    public WebDriver chromeDriver() {
+        System.setProperty("webdriver.chrome.driver", "./src/test/resources/driver/chromedriver");
+        driver = new ChromeDriver();
+        return driver;
+    }
 
     static {
         ChromeOptions chromeOptions = new ChromeOptions();
