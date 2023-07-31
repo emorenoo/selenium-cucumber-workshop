@@ -21,7 +21,7 @@ public class EightPage extends BasePage{
     By eventosButton = By.id("wsf-1-field-106");
     By calendarioButton = By.id("wsf-1-field-107");
     By selectFileButton = By.id("wsf-1-field-108");
-    String fileToUpload = "/Users/eduard.morenoo/Documents/testSelenium.jpg";
+    String fileToUpload = "/Users/eduard.morenoo/eclipse-workspace/seleniumcucumberjava/src/test/resources/files/testSelenium.jpg";
     By nameAlert = By.cssSelector("#wsf-1-invalid-feedback-95");
     By emailAlert = By.cssSelector("#wsf-1-invalid-feedback-97");
     By calendarAlert = By.cssSelector("#wsf-1-invalid-feedback-107");

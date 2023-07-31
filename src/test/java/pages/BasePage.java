@@ -22,7 +22,6 @@ public class BasePage {
 
     static {
         ChromeOptions chromeOptions = new ChromeOptions();
-        //chromeOptions.setExperimentalOption("prefs", chromePrefs);
         chromeOptions.addArguments("--no-sandbox");
         chromeOptions.addArguments("--headless"); //!!!should be enabled for Jenkins
         chromeOptions.addArguments("--disable-dev-shm-usage"); //!!!should be enabled for Jenkins
