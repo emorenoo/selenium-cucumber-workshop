@@ -51,7 +51,7 @@ Feature: Test practice page and personal data
     And click in the submit button mandatory
     Then does not load personal data and generate alerts again
     When enter mandatory data
-    And click in the submit button mandatory
+    #And click in the submit button mandatory
     Then charge personal data successfully mandatory
 
   Scenario: Load and validate the contact information

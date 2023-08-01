@@ -82,7 +82,6 @@ public class SevenPage extends BasePage{
         clickElement(calendarioButton);
     }
     public void fileUpload(){
-        if(isDisplayed(selectFileButton)){
-        write(fileToUpload,selectFileButton);}
+        write(fileToUpload,selectFileButton);
     }
 }

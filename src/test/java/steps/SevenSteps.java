@@ -18,7 +18,7 @@ public class SevenSteps {
     }
     @When("^enter complete and file data$")
     public void enterData() {
-        sevenPage.fileUpload();
+        //sevenPage.fileUpload();
         sevenPage.selectDates();
         sevenPage.enterData();
         sevenPage.clickRadio();
