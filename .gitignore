@@ -12,7 +12,6 @@
 *.rar
 
 # Auto-generated
-test-output/
 target/
 .idea/
 .vscode/
