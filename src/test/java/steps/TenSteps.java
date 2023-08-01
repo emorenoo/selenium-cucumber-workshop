@@ -18,13 +18,13 @@ public class TenSteps {
     }
     @When("^enter complete and disabled fields data$")
     public void enterData(){
+        tenPage.selectDates();
         tenPage.enterData();
         Assert.assertEquals("Villanueva",tenPage.ValidateLastName());
         Assert.assertEquals("5540786789",tenPage.ValidatePhone());
         tenPage.clickRadio();
         tenPage.selectOS("Mac");
         tenPage.selectMac("Yosemite");
-        tenPage.selectDates();
     }
     @And("^click in the submit button disabled fields$")
     public void submitForm(){

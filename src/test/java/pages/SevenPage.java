@@ -21,7 +21,7 @@ public class SevenPage extends BasePage{
     By eventosButton = By.id("wsf-1-field-91");
     By calendarioButton = By.id("wsf-1-field-92");
     By selectFileButton = By.id("wsf-1-field-94");
-    String fileToUpload = "/Users/eduard.morenoo/Documents/testSelenium.jpg";
+    String fileToUpload = "/Users/eduard.morenoo/eclipse-workspace/seleniumcucumberjava/src/test/resources/files/testSelenium.jpg";
 
 
     public SevenPage(){
@@ -82,7 +82,6 @@ public class SevenPage extends BasePage{
         clickElement(calendarioButton);
     }
     public void fileUpload(){
-
         write(fileToUpload,selectFileButton);
     }
 }

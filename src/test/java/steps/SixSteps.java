@@ -18,11 +18,11 @@ public class SixSteps {
     }
     @When("^enter complete and calendar data$")
     public void enterData(){
+        sixPage.selectDates();
         sixPage.enterData();
         sixPage.clickRadio();
         sixPage.selectOS("Mac");
         sixPage.selectMac("Yosemite");
-        sixPage.selectDates();
     }
     @And("^click in the submit button calendar$")
     public void submitForm(){
